@@ -100,17 +100,17 @@ def createGPX(lats,lons,latd,lond,movingspeed):
             stri+=lon
             stri+="></wpt>"
            
-        for num in range(1,1200):
-            stri+="\n\t<wpt lat="
-
-            lat="\""+str(latd)+"\""
-            stri+=lat
-
-            lon="\""+str(lond)+"\""        
-     
-            stri+=" lon="
-            stri+=lon
-            stri+="></wpt>"
+##        for num in range(1,1200):
+##            stri+="\n\t<wpt lat="
+##
+##            lat="\""+str(latd)+"\""
+##            stri+=lat
+##
+##            lon="\""+str(lond)+"\""        
+##     
+##            stri+=" lon="
+##            stri+=lon
+##            stri+="></wpt>"
         stri+="\n</gpx>"
         #print(stri)
         text_file = open("cycl.gpx", "w")
